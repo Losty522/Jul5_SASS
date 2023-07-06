@@ -6,4 +6,346 @@ html {
   font-size: 62.5%;
 }
 
+body main {
+  border: 1px solid red;
+  width: 100%;
+  height: 900px;
+  background-image: url(https://images.unsplash.com/photo-1479044769763-c28e05b5baa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80);
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-blend-mode: lighten;
+}
+body main header {
+  opacity: 1;
+  font-size: 16px;
+  width: 90%;
+  border: 1px solid red;
+}
+body main header nav {
+  color: #0d0d25;
+  border: 1px solid red;
+  display: flex;
+  margin: 20px 20px 20px 20px;
+}
+body main header nav span {
+  color: #ff8800;
+  font-size: 22px;
+  font-weight: bold;
+}
+body main header nav ul {
+  list-style: none;
+  padding-left: 130px;
+  border: 1px solid red;
+  display: flex;
+  margin-left: auto;
+}
+body main header nav ul li {
+  border: 1px solid red;
+  margin-right: 10px;
+}
+body main header nav ul li a {
+  text-decoration: none;
+}
+body main header nav ul li a:visited {
+  color: #0d0d25;
+}
+body main header nav a {
+  margin-right: 20px;
+}
+body main header nav a:visited {
+  color: #ff8800;
+}
+body main header nav .hamburger {
+  border: 1px solid red;
+  display: none;
+}
+body main header nav .cart {
+  padding-right: 30px;
+  margin-left: auto;
+  border: 1px solid red;
+}
+body main header nav .search {
+  border: 1px solid red;
+}
+body main .welcome {
+  border: 1px solid yellow;
+  width: 100%;
+  height: 100%;
+  color: #0d0d25;
+  padding-top: 350px;
+}
+body main .welcome h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+body main .welcome form {
+  text-align: center;
+  margin-top: 20px;
+  color: #0d0d25;
+}
+body main .welcome form input {
+  width: 20rem;
+  height: 4rem;
+  border: 3px solid white;
+  border-radius: 10px 0px 0px 10px;
+  font-size: 14px;
+  padding: 10px 10px 10px 10px;
+}
+body main .welcome form select {
+  background-color: #ff8800;
+  color: white;
+  width: 10rem;
+  height: 4rem;
+  border-radius: 1px;
+  font-size: 14px;
+  appearance: none;
+  padding: 10px 10px;
+}
+body .about {
+  color: #0d0d25;
+  border: 1px solid red;
+  width: 100%;
+  height: 100%;
+  background-image: url(/images/about.png);
+  background-size: cover;
+  padding-left: 40%;
+  padding-bottom: 100px;
+}
+body .about h2 {
+  border: 1px solid red;
+  width: 80%;
+  height: 1%;
+  font-size: 16px;
+  color: #ff8800;
+  margin-top: 40px;
+}
+body .about h3 {
+  border: 1px solid red;
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+body .about p {
+  border: 1px solid red;
+  font-size: 16px;
+  width: 65%;
+  line-height: 1.7;
+}
+body .about p:nth-of-type(1) {
+  margin-bottom: 70px;
+}
+body .about p:nth-of-type(2) {
+  margin-bottom: 30px;
+}
+body .about a {
+  font-size: 18px;
+  background-color: #ff8800;
+  color: #f7f7f8;
+  border-radius: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 7px 0px 7px 5px;
+}
+body .about a i {
+  background-color: #ffc415;
+  color: #f7f7f8;
+  border-radius: 0px 5px 5px 0px;
+  padding: 8px 7px 9px 8px;
+}
+body .order h3 {
+  border: 1px solid red;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+body .order .cuisine {
+  display: flex;
+  justify-content: center;
+}
+body .order .cuisine li {
+  width: 10%;
+  text-align: center;
+  border: 1px solid red;
+  font-size: 18px;
+  border-bottom: 2px solid #f7f7f8;
+  padding-bottom: 15px;
+}
+body .order .cuisine li a {
+  text-decoration: none;
+}
+body .order .cuisine li a:visited {
+  color: #0d0d25;
+}
+body .order .cuisine li a.firstlink:visited {
+  color: #ff8800;
+}
+body .order .cuisine li:nth-of-type(1) {
+  border-bottom: 2px solid #ff8800;
+}
+body .order .gallery {
+  border: 1px solid red;
+  width: 90%;
+  height: 450px;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2.5%;
+}
+body .order .gallery .section {
+  width: 100%;
+  height: 200px;
+}
+body .order .gallery .img01 {
+  background-image: url(https://source.unsplash.com/fdlZBWIP0aM);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body .order .gallery .img02 {
+  background-image: url(https://source.unsplash.com/mmnKI8kMxpc);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body .order .gallery .img03 {
+  background-image: url(https://source.unsplash.com/WbA_PCv3_Co);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body .order .gallery .img04 {
+  background-image: url(https://source.unsplash.com/SH6vc3VOOwE);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body .order .gallery .img05 {
+  background-image: url(https://source.unsplash.com/ohnRXPYXDEE);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body .order .gallery .img06 {
+  background-image: url(https://source.unsplash.com/j3gz0KReZbA);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body .order .gallery .img07 {
+  background-image: url(https://source.unsplash.com/FFqNATH27EM);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body .order .gallery .img08 {
+  background-image: url(https://source.unsplash.com/RwoKbjJdYvE);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body .order .gallery .img09 {
+  background-image: url(https://source.unsplash.com/ThtzElwvwyM);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body .order .dots {
+  display: flex;
+  justify-content: center;
+  color: #ff8800;
+  font-size: 20px;
+}
+body .order .dots li {
+  padding: 5px;
+}
+body .book {
+  border: 1px solid red;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: url(https://source.unsplash.com/ThtzElwvwyM);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+body .book h2 {
+  width: 100%;
+  font-size: 16px;
+  color: #ff8800;
+  text-align: center;
+  margin-top: 50px;
+}
+body .book h3 {
+  width: 100%;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 30px;
+  text-align: center;
+}
+body .book i {
+  width: 60px;
+  height: 60px;
+  font-size: 40px;
+  border: 1px solid #ff8800;
+  color: #ff8800;
+  border-radius: 100%;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body .book span {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+body .book a {
+  color: #ff8800;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+body .book section:first-of-type {
+  width: 60%;
+  border: 1px solid red;
+  display: flex;
+  flex-flow: column;
+  margin-right: auto;
+}
+body .book section:last-of-type {
+  width: 60%;
+  border: 1px solid red;
+  display: flex;
+  flex-flow: column;
+  margin-left: auto;
+  position: relative;
+  bottom: 55px;
+}
+body .book section span {
+  font-size: 14px;
+}
+body .book section .time {
+  font-size: 20px;
+}
+body .book img {
+  width: 80%;
+  margin: 50px auto;
+}
+body footer {
+  height: 100px;
+}
+body footer p {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 35px;
+}
+
 /*# sourceMappingURL=main.css.map */

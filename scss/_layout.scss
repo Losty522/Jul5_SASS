@@ -1,15 +1,409 @@
 // @use 'base' as *;
 
+
 // header
+body{
+  main{
+    border: 1px solid red;
+    width: 100%;
+    height: 900px;
+    background-image: url(https://images.unsplash.com/photo-1479044769763-c28e05b5baa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80);
+    background-size:cover;
+    background-color:rgba(255,255,255,0.3);
+    background-blend-mode:lighten;
 
-// welcome
+    header{
+      opacity: 1.0;
+      font-size: 16px;
+      width: 90%;      
+      border: 1px solid red;
+      
+      nav{
+        color: $color-text;
+        span{
+          color: $color-main;
+          font-size: 22px;
+          font-weight:bold;
+        }
+        border: 1px solid red;
+        display: flex;
+        margin: 20px 20px 20px 20px;
+        
+        ul{
+          
+          list-style :none;
+          padding-left: 130px;
+          border: 1px solid red;
+          display: flex;
+          margin-left: auto;
+          
+          li{
+            border: 1px solid red;
+            margin-right:10px;
+            a{
+              text-decoration: none;
+            }
+            a:visited{
+              color: $color-text;
+            }
+          }
+          
+          
+        }
 
-// about
+        a{
+          margin-right: 20px;          
+        }
+        a:visited{
+          color: $color-main;
+        }
 
-// order
+        .hamburger{
+          border: 1px solid red;
+          display: none;
+        }
+        .cart{
+          padding-right: 30px;
+          margin-left: auto;
+          border: 1px solid red;
+          
+        }
+        .search{
+          
+          border: 1px solid red;
+          
+        }
 
-// gallery
+      }
 
-// contact
+    }//header
 
-// footer
+    .welcome{
+      border: 1px solid yellow;
+      width: 100%;
+      height: 100%;
+      color: $color-text;
+      padding-top: 350px;
+      h1{
+        text-align: center;
+        font-size: 50px;
+        font-weight:bold;
+        
+      }
+      form{
+        text-align: center;
+        margin-top: 20px;
+        color: $color-text;
+        input{
+          width: 20rem;
+          height: 4rem;
+          border: 3px solid white;
+          border-radius: 10px 0px 0px 10px;
+          font-size: 14px;
+          padding: 10px 10px 10px 10px;
+          
+          
+        }
+        select{
+          background-color: $color-main;
+          color: white;
+          width: 10rem;
+          height: 4rem;
+          border-radius: 1px;
+          font-size: 14px;
+          appearance: none; 
+          padding: 10px 10px;
+          
+        }
+      }
+    }// welcome
+
+  }//main
+
+  .about{
+    color: $color-text;
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/about.png);
+    background-size:cover;
+    padding-left: 40%;
+    padding-bottom: 100px;
+    
+    h2{
+      border: 1px solid red;
+      width: 80%;
+      height: 1%;
+      font-size: 16px;
+      color: $color-main;
+      margin-top: 40px;
+    }
+    h3{
+      border: 1px solid red;
+      font-size: 36px;
+      font-weight:bold;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    p{
+      border: 1px solid red;
+      font-size: 16px;
+      width: 65%;
+      line-height: 1.7;
+    }
+    p:nth-of-type(1){
+      margin-bottom: 70px;
+    }
+    p:nth-of-type(2){
+      margin-bottom: 30px;
+    }
+
+    a{
+      font-size: 18px;
+      background-color: $color-main;
+      color: $color-grey;
+      // border: 1px solid red;
+      border-radius: 5px;
+      font-size: 14px;
+      text-decoration: none;
+      padding: 7px 0px 7px 5px;
+      
+      i{
+        background-color: $color-star;
+        color: $color-grey;
+        border-radius: 0px 5px 5px 0px;
+        padding: 8px 7px 9px 8px;
+  
+      }
+    }
+
+  }// about
+  
+  .order{
+
+    h3{
+      border: 1px solid red;
+      font-size: 40px;
+      font-weight:bold;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 30px;
+
+    }
+    .cuisine{
+      display: flex;
+      justify-content: center; 
+      li{
+        width: 10%;
+        text-align: center;
+        border: 1px solid red;
+        // margin-right:20px;
+        font-size: 18px;
+        border-bottom: 2px solid $color-grey;
+        padding-bottom: 15px;
+        a{
+          text-decoration: none;
+          
+        }
+        a:visited{
+          color: $color-text;
+          
+        }
+        a.firstlink:visited {
+          color: $color-main; 
+         
+        }
+      }
+      li:nth-of-type(1){
+        border-bottom: 2px solid $color-main;
+      }
+    }
+
+    .gallery{
+      border: 1px solid red;
+      width: 90%;
+      height: 450px;
+      margin: 0 auto;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 2.5%;
+
+      .section{
+        width: 100%;
+        height: 200px;
+      }
+
+      .img{
+        &01{
+          background-image: url(https://source.unsplash.com/fdlZBWIP0aM);
+          background-size:cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        &02{
+          background-image: url(https://source.unsplash.com/mmnKI8kMxpc);
+          background-size:cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        &03{
+          background-image: url(https://source.unsplash.com/WbA_PCv3_Co);
+          background-size:cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        &04{
+          background-image: url(https://source.unsplash.com/SH6vc3VOOwE);
+          background-size:cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        &05{
+          background-image: url(https://source.unsplash.com/ohnRXPYXDEE);
+          background-size:cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        &06{
+          background-image: url(https://source.unsplash.com/j3gz0KReZbA);
+          background-size:cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        &07{
+          background-image: url(https://source.unsplash.com/FFqNATH27EM);
+          background-size:cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        &08{
+          background-image: url(https://source.unsplash.com/RwoKbjJdYvE);
+          background-size:cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        &09{
+          background-image: url(https://source.unsplash.com/ThtzElwvwyM);
+          background-size:cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+
+      }
+    }// gallery
+
+    .dots{
+      display: flex;
+      justify-content: center; 
+      color: $color-main;
+      font-size: 20px;
+      li{
+        padding: 5px;
+      }
+    }
+
+  }// order
+  
+  .book{
+    border: 1px solid red;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: url(https://source.unsplash.com/ThtzElwvwyM);
+    background-size:cover;
+    background-repeat: no-repeat;
+    text-align: center;
+
+    h2{
+      width: 100%;
+      font-size: 16px;
+      color: $color-main;
+      text-align: center;
+      margin-top: 50px;
+    }
+    h3{
+      width: 100%;
+      font-size: 40px;
+      font-weight:bold;      
+      margin-top: 30px;
+      text-align: center;
+    }
+    i{
+      width: 60px;
+      height: 60px;
+      font-size: 40px;
+      border: 1px solid $color-main;
+      color: $color-main;
+      border-radius: 100%;
+      padding-top: 10px;
+      
+      margin-top: 20px;
+      margin-bottom: 20px;
+      
+    }
+    span{
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    a{
+      color: $color-main;
+      font-size: 20px;
+      text-decoration: none;
+      font-weight:bold;
+      margin-bottom: 20px;
+    }
+
+    section:first-of-type{
+      width: 60%;
+      border: 1px solid red;
+      display: flex;
+      flex-flow: column;
+      margin-right: auto;
+      
+      
+    }
+    section:last-of-type{
+      width: 60%;
+      border: 1px solid red;
+      display: flex;
+      flex-flow: column;
+      margin-left: auto;
+      position: relative;
+      bottom: 55px;
+      
+    }
+    section{
+      span{
+        font-size: 14px;
+      }
+      .time{
+        font-size: 20px;
+      }
+  
+    }
+    img{
+        width: 80%;
+        margin: 50px auto;
+    }
+
+  }// book contact
+  
+  footer{
+    height: 100px;
+    p{
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+      margin-top: 35px;
+    }
+  }
+  // footer
+
+
+  
+}//body
