@@ -3,20 +3,20 @@
 
 // header
 body{
+  
   main{
-    border: 1px solid red;
+    border: 1px solid rgb(255, 255, 255,0);
     width: 100%;
     height: 900px;
-    background-image: url(https://images.unsplash.com/photo-1479044769763-c28e05b5baa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80);
+    background:linear-gradient(rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.1)), url(https://images.unsplash.com/photo-1479044769763-c28e05b5baa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80);
     background-size:cover;
-    background-color:rgba(255,255,255,0.3);
-    background-blend-mode:lighten;
 
     header{
+      font-family: $font-lato;
       opacity: 1.0;
       font-size: 16px;
       width: 90%;      
-      border: 1px solid red;
+      // border: 1px solid red;
       
       nav{
         color: $color-text;
@@ -25,7 +25,7 @@ body{
           font-size: 22px;
           font-weight:bold;
         }
-        border: 1px solid red;
+        // border: 1px solid red;
         display: flex;
         margin: 20px 20px 20px 20px;
         
@@ -33,12 +33,12 @@ body{
           
           list-style :none;
           padding-left: 130px;
-          border: 1px solid red;
+          // border: 1px solid red;
           display: flex;
           margin-left: auto;
           
           li{
-            border: 1px solid red;
+            // border: 1px solid red;
             margin-right:10px;
             a{
               text-decoration: none;
@@ -59,18 +59,18 @@ body{
         }
 
         .hamburger{
-          border: 1px solid red;
+          // border: 1px solid red;
           display: none;
         }
         .cart{
           padding-right: 30px;
           margin-left: auto;
-          border: 1px solid red;
+          // border: 1px solid red;
           
         }
         .search{
           
-          border: 1px solid red;
+          // border: 1px solid red;
           
         }
 
@@ -79,7 +79,7 @@ body{
     }//header
 
     .welcome{
-      border: 1px solid yellow;
+      // border: 1px solid yellow;
       width: 100%;
       height: 100%;
       color: $color-text;
@@ -122,7 +122,7 @@ body{
 
   .about{
     color: $color-text;
-    border: 1px solid red;
+    // border: 1px solid red;
     width: 100%;
     height: 100%;
     background-image: url(/images/about.png);
@@ -131,7 +131,7 @@ body{
     padding-bottom: 100px;
     
     h2{
-      border: 1px solid red;
+      // border: 1px solid red;
       width: 80%;
       height: 1%;
       font-size: 16px;
@@ -139,14 +139,14 @@ body{
       margin-top: 40px;
     }
     h3{
-      border: 1px solid red;
+      // border: 1px solid red;
       font-size: 36px;
       font-weight:bold;
       margin-top: 30px;
       margin-bottom: 30px;
     }
     p{
-      border: 1px solid red;
+      // border: 1px solid red;
       font-size: 16px;
       width: 65%;
       line-height: 1.7;
@@ -182,7 +182,7 @@ body{
   .order{
 
     h3{
-      border: 1px solid red;
+      // border: 1px solid red;
       font-size: 40px;
       font-weight:bold;
       text-align: center;
@@ -196,7 +196,7 @@ body{
       li{
         width: 10%;
         text-align: center;
-        border: 1px solid red;
+        // border: 1px solid red;
         // margin-right:20px;
         font-size: 18px;
         border-bottom: 2px solid $color-grey;
@@ -220,7 +220,7 @@ body{
     }
 
     .gallery{
-      border: 1px solid red;
+      // border: 1px solid red;
       width: 90%;
       height: 450px;
       margin: 0 auto;
@@ -233,6 +233,7 @@ body{
       .section{
         width: 100%;
         height: 200px;
+
       }
 
       .img{
@@ -291,8 +292,42 @@ body{
           background-position: center;
         }
 
-
+      }      
+      section {
+        
+        height: 200px;
+        width: 100%;
+        margin: 2.5%;
+        position: relative;
+        overflow: hidden;
       }
+      
+      .gallery-overlay{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0,0,0,0.5);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: -100%;
+        transition: left 0.7s;
+      
+      }
+      section:hover .gallery-overlay{
+        left: 0;
+      }
+
+      span{
+        font-size: 18px;
+        color: $color-grey;
+      }
+      .stars{
+        font-size: 18px;
+        color: $color-star;
+      }
+
     }// gallery
 
     .dots{
@@ -308,7 +343,7 @@ body{
   }// order
   
   .book{
-    border: 1px solid red;
+    // border: 1px solid red;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -360,7 +395,7 @@ body{
 
     section:first-of-type{
       width: 60%;
-      border: 1px solid red;
+      // border: 1px solid red;
       display: flex;
       flex-flow: column;
       margin-right: auto;
@@ -369,7 +404,7 @@ body{
     }
     section:last-of-type{
       width: 60%;
-      border: 1px solid red;
+      // border: 1px solid red;
       display: flex;
       flex-flow: column;
       margin-left: auto;
@@ -394,7 +429,7 @@ body{
   }// book contact
   
   footer{
-    height: 100px;
+    height: 60px;
     p{
       width: 100%;
       text-align: center;
